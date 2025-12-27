@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Profil</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-top: 10px solid #051c60;
+            text-align: center;
+        }
+
+        h2 {
+            color: #000000;
+            margin-bottom: 25px;
+        }
+
+        label {
+            color: #101889;
+            font-weight: bold;
+            display: block;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #1f08a2;
+            border-radius: 5px;
+        }
+
+        button, .back {
+            width: 100%;
+            padding: 10px;
+            background: #110e67;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        button:hover, .back:hover {
+            background: #6f4628;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Form Profil Mahasiswa</h2>
+
+    <form action="profil-tampil.html" method="get">
+        <label>NIM</label>
+        <input type="text" name="nim" required>
+
+        <label>Nama</label>
+        <input type="text" name="nama" required>
+
+        <label>Alamat</label>
+        <textarea name="alamat" required></textarea>
+
+        <label>Hobi</label>
+        <input type="text" name="hobi" required>
+
+        <label>Instagram</label>
+        <input type="text" name="instagram" placeholder="@username" required>
+
+        <button type="submit">Simpan</button>
+    </form>
+
+    <a href="index.html" class="back">Kembali ke Beranda</a>
+</div>
+
+</body>
+</html>
